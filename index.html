@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manish Kumar Gupta — Portfolio</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300 ;400;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="nav">
+      <a href="#home" class="logo">Manish — Portfolio</a>
+
+      <!-- Links -->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+
+      <!-- Theme switcher (inside nav for desktop) -->
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <i data-lucide="sun"></i>
+      </button>
+
+      <!-- Hamburger -->
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <canvas id="bg-canvas"></canvas>
+    <div class="hero-content">
+      <h1 >
+        Hi, I’m <span class="gradient-text">Manish Kumar Gupta</span><br/>
+        <span id="typewriter"></span>
+      </h1>
+      <p>Final-year CS student who loves building scalable apps & data-driven products.</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">View Work</a>
+        <a href="mailto:manishgupta20226@gmail.com" class="btn outline">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+<!-- About  -->
+<section id="about" class="section reveal">
+  <h2>About Me</h2>
+  <div class="about-grid">
+    <div class="about-text" data-animation="fade-left">
+      <p>
+        Final-year <strong>Computer Science</strong> student at <strong>UEM Kolkata</strong> with
+        expertise in <strong>Full-Stack Development</strong>, <strong>Machine Learning</strong>, 
+        <strong>Java</strong>, <strong>Python</strong>, <strong>JavaScript</strong>, and 
+        <strong>Data Structures & Algorithms</strong>. I have hands-on experience building 
+        robust web applications, deploying predictive ML models, and collaborating on agile 
+        team projects. I’m now seeking a <strong>Software Developer / Full-Stack Engineer</strong> 
+        role where I can contribute to impactful, growth-focused initiatives.
+      </p>
+      <ul class="meta">
+        <li><i data-lucide="mail"></i> manishgupta20226@gmail.com</li>
+        <li><i data-lucide="phone"></i> +91 6203458826</li>
+        <li><i data-lucide="map-pin"></i> Kolkata, West Bengal</li>
+      </ul>
+      <div class="socials">
+        <a href="https://github.com/Manishgupta5815" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://linkedin.com/in/manni2026" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      </div>
+    </div>
+    <div class="tilt-card" data-animation="fade-right">
+      <img src="/images/profile.jpg" alt="Profile" />
+    </div>
+  </div>
+</section>
+
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <!-- Java -->
+      <div class="skill-card" data-tilt data-animation="scale-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg " alt="Java"/>
+        <span>Java</span>
+      </div>
+      <!-- Python -->
+      <div class="skill-card" data-tilt data-animation="scale-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg " alt="Python"/>
+        <span>Python</span>
+      </div>
+      <!-- JS -->
+      <div class="skill-card" data-tilt data-animation="scale-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg " alt="JS"/>
+        <span>JavaScript</span>
+      </div>
+      <!-- React -->
+      <div class="skill-card" data-tilt data-animation="scale-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg " alt="React"/>
+        <span>React.js</span>
+      </div>
+      <!-- Node -->
+      <div class="skill-card" data-tilt data-animation="scale-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg " alt="Node"/>
+        <span>Node.js</span>
+      </div>
+      <!-- Mongo -->
+      <div class="skill-card" data-tilt data-animation="scale-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg " alt="Mongo"/>
+        <span>MongoDB</span>
+      </div>
+      <!-- TensorFlow -->
+      <div class="skill-card" data-tilt data-animation="scale-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg " alt="TF"/>
+        <span>TensorFlow</span>
+      </div>
+      <!-- Git -->
+      <div class="skill-card" data-tilt data-animation="scale-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg " alt="Git"/>
+        <span>Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Solar -->
+      <article class="project-card" data-tilt data-animation="slide-up">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=60 " alt="Solar"/>
+        </div>
+        <div class="project-body">
+          <h3>🌞 Solar Irradiance Forecasting</h3>
+          <p>ANN model (TensorFlow) beating linear regression by 15 %, R² = 0.9142.</p>
+          <a href="https://github.com/Manishgupta5815 " class="btn outline small">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Tree -->
+      <article class="project-card" data-tilt data-animation="slide-up">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=60 " alt="Tree"/>
+        </div>
+        <div class="project-body">
+          <h3>🌿 Tree Species Classification</h3>
+          <p>Flask + EfficientNetV2 web app with smart rejection.</p>
+          <a href="https://github.com/Manishgupta5815 " class="btn outline small">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Voting -->
+      <article class="project-card" data-tilt data-animation="slide-up">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=600&q=60 " alt="Vote"/>
+        </div>
+        <div class="project-body">
+          <h3>🗳 Online Voting System</h3>
+          <p>Secure React/Node/Mongo platform with JWT & real-time results.</p>
+          <a href="https://github.com/Manishgupta5815 " class="btn outline small">GitHub</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+<section id="recommendations" class="section reveal">
+  <h2>Recommendations</h2>
+
+  <div class="rec-slider">
+    <!-- Card 1 -->
+    <div class="rec-card" data-animation="fade-up">
+      <blockquote>
+        "Manish is a very quick learner and quickly grasps key concepts of Web development. He has a great attitude & is an excellent team player."
+      </blockquote>
+      <footer>— Anonymous</footer>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="rec-card" data-animation="fade-up">
+      <blockquote>
+        "Working with Manish has been an awesome experience. He is highly knowledgeable and always goes the extra step to make sure everything is right."
+      </blockquote>
+      <footer>— Anonymous</footer>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="rec-card" data-animation="fade-up">
+      <blockquote>
+        "I worked with Manish during the initial phase of our venture which needed Web development. He is a committed resource with in-depth knowledge and will be an asset to any organisation!"
+      </blockquote>
+      <footer>— Anonymous</footer>
+    </div>
+  </div>
+
+  <!-- Quick-add form -->
+  <form id="rec-form" class="rec-form">
+    <textarea placeholder="Write a few words about Manish…" required></textarea>
+    <input type="text" placeholder="Your Name (optional)" />
+    <button type="submit" class="btn primary">Submit</button>
+  </form>
+</section>
+
+  <!-- Résumé -->
+  <section id="resume" class="section reveal">
+    <h2>Resume</h2>
+    <p>Grab my latest resume:</p>
+    <a href="/images/ManishKumarGupta_Developer.pdf" download class="btn primary">
+      <i data-lucide="download"></i> Download PDF
+    </a>
+  </section>
+<!--footer-->
+<footer>
+  <div class="footer-inner">
+    <!-- 1. GitHub & LinkedIn -->
+    <div class="footer-socials">
+      <a href="https://github.com/Manishgupta5815 " aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a href="https://linkedin.com/in/manni2026 " aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+    </div>
+
+    <!-- 2. Copyright -->
+    <p class="footer-copy">
+      © <span id="year"></span> Manish Kumar Gupta. All rights reserved.
+    </p>
+
+    <!-- 3. Back-to-top arrow -->
+    <a href="#home" class="footer-top" aria-label="Back to top">
+      <i data-lucide="home"></i>
+    </a>
+  </div>
+</footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js "></script>
+  <script src="script.js"></script>
+</body>
+</html>
